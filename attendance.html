@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #Calculate {
+            padding: 10px 20px;
+            background-color: #28a745; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; 
+            border-radius: 4px; 
+            transition: background-color 0.3s; 
+        }
+        #Calculate:hover {
+            background-color: #218838; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Student Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./attendance.html">Attendance</a></li>
+            <li><a href="./fees.html">Fees</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./signin.html">SignIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Attendance Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Israel</td>
+                        <td>2024-08-31</td>
+                        <td>Absent</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Bellary Somu</td>
+                        <td>2024-08-31</td>
+                        <td>Present</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <button id="Calculate" onclick="goToCalculator()">Calculate your attendance</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Student Attendance Tracker. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goToCalculator() {
+            window.location.href = "./cal/index.html"; 
+        }
+    </script>
+</body>
+</html>
